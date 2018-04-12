@@ -624,6 +624,15 @@ d.createStyleSheet(),d.cssText=b;else{c=d.getElementsByTagName("head")[0];if(!c)
         foranimClick.addEventListener("click", function(e){
         
         var foranim = document.getElementById("gwd-imagebutton_1");
+        var soundButton =  document.getElementById("gwd-sound-off");
+            
+        gwd.auto_Gwd_video_1Waiting = function(event) {
+        // GWD Predefined Function
+        gwd.actions.events.setInlineStyle('gwd-sound-off', 'visibility: visible;');
+        };
+
+
+
         // -> removing the class
         foranim.classList.remove("gwd-imagebutton-qemc-animation");
     
